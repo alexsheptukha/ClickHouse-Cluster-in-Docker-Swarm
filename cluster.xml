@@ -1,0 +1,17 @@
+<clickhouse>
+<remote_servers replace="true">
+    <mycluster>
+        <shard>
+            <internal_replication>true</internal_replication>
+            <replica>
+                <host>clickserver1</host>
+                <port>9000</port>
+            </replica>
+            <replica>
+                <host>clickserver2</host>
+                <port>9000</port>
+            </replica>
+        </shard>
+    </mycluster>
+</remote_servers>
+</clickhouse>
